@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply text-[#1F2937] tracking-wide;
+    font-family: 'Jost', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+
+  li {
+    @apply cursor-pointer
+  }
+}
+
+html {
+  scrollbar-width: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  @apply bg-neutral-50 duration-700;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+li {
+  position: relative;
+}
+
+.list-1 li::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50%;
+  content: '';
+  width: 5px;
+  height: 5px;
+  @apply bg-neutral-900 dark:bg-white rounded-full hidden;
+}
+
+.list-1 li:hover::after {
+  @apply block;
+}
+
+.list-2 li::after {
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  width: 8px;
+  height: 8px;
+  @apply bg-neutral-50 rounded-full hidden;
+}
+
+.list-2 li:hover::after {
+  @apply block;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
