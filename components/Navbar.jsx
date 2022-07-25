@@ -44,8 +44,11 @@ const Navbar = () => {
           <div className={`${nav ? 'right-0 rounded-none opacity-100' : 'right-[-100%] md:right-[-60%] rounded-l-[500px] opacity-0'} fixed z-[2] top-0 w-[100%] h-screen flex flex-col justify-center bg-neutral-900 text-neutral-200 sm:w-[60%] md:w-[60%] lg:w-[40%] px-7 sm:px-[40px] md:px-[80px] lg:px-[100px] py-10 ease-in-out duration-1000`}>
             <div>
               <div className='flex justify-between items-center'>
-                <div className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[200px] opacity-0'} w-[95px] lg:w-[105px] h-[30px] overflow-hidden flex items-center cursor-pointer duration-1000 ease-in-out delay-[.5s]`}>
-                  <h3 className='whitespace-nowrap ml-0 hover:ml-[-105px] delay-150 duration-500 hover:text-[#FF0000]'>Frans Achmad  Front End Dev</h3>
+                <div className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[200px] opacity-0'} hidden lg:block w-[95px] lg:w-[105px] h-[30px] overflow-hidden flex items-center cursor-pointer duration-1000 ease-in-out delay-[.5s]`}>
+                  <h3 className='whitespace-nowrap ml-0 hover:ml-[-105px] delay-150 duration-500'>Frans Achmad  Front End Dev</h3>
+                </div>
+                <div className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[200px] opacity-0'} lg:hidden w-[95px] lg:w-[105px] h-[30px] overflow-visible flex items-center cursor-pointer duration-1000 ease-in-out delay-[.5s]`}>
+                  <h3 className='whitespace-nowrap ml-0 delay-150 duration-500 hover:text-[#FF0000]'>Frans Achmad | Front End Dev</h3>
                 </div>
                 <div onClick={handleNav} className='absolute top-[20px] md:top-[40px] right-[20px] md:right-[40px] rounded-full p-6 cursor-pointer bg-neutral-200 text-neutral-900  hover:scale-110 duration-500 active:scale-75'>
                   <AiOutlineClose size={20} />
@@ -60,13 +63,13 @@ const Navbar = () => {
                 <Link href='/'>
                   <li className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[.8s]`}>Home</li>
                 </Link>
-                <Link href='/work'>
+                <Link href='/#projects'>
                   <li className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[.9s]`}>Work</li>
                 </Link>
                 <Link href='/about'>
                   <li className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[1s]`}>About</li>
                 </Link>
-                <Link href='/contact'>
+                <Link href='/#contact'>
                   <li className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[1.1s]`}>Contact</li>
                 </Link>
               </ul>
@@ -114,7 +117,7 @@ const Navbar = () => {
             </div>
           </div>
 
-        <div onClick={handleNav} className={`${dekstopMenu ? 'opacity-100' : 'opacity-0 z-[-2]'} fixed ${nav ? 'z-[-2]' : 'z-[-1]'} top-[20px] md:top-[40px] right-[20px] md:right-[40px] rounded-full p-6 cursor-pointer  bg-neutral-900 text-neutral-50 hover:text-neutral-900 hover:bg-[#FF0000] hover:scale-110 duration-500 active:scale-75`}>
+        <div onClick={handleNav} className={`${dekstopMenu ? 'opacity-100' : 'opacity-0 z-[-2]'} fixed ${nav ? 'z-[-2]' : 'z-[-1]'} top-[20px] md:top-[40px] right-[20px] md:right-[40px] rounded-full p-6 cursor-pointer bg-neutral-900 text-neutral-50 hover:scale-110 duration-500 active:scale-75`}>
           <AiOutlineMenu size={20} />
         </div>
 
