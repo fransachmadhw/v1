@@ -61,16 +61,16 @@ const Navbar = () => {
             <div className='my-10 list-2'>
               <ul className='flex flex-col gap-4 text-neutral-50'>
                 <Link href='/'>
-                  <li className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[.8s]`}>Home</li>
+                  <li onClick={() => setNav(false)} className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[.8s]`}>Home</li>
                 </Link>
                 <Link href='/#projects'>
-                  <li className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[.9s]`}>Work</li>
+                  <li onClick={() => setNav(false)} className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[.9s]`}>Projects</li>
                 </Link>
                 <Link href='/about'>
-                  <li className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[1s]`}>About</li>
+                  <li onClick={() => setNav(false)} className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[1s]`}>About</li>
                 </Link>
                 <Link href='/#contact'>
-                  <li className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[1.1s]`}>Contact</li>
+                  <li onClick={() => setNav(false)} className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[1.1s]`}>Contact</li>
                 </Link>
               </ul>
             </div>

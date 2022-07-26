@@ -1,8 +1,16 @@
+import React from 'react'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Main from '../components/Main'
+import Projects from '../components/Projects'
 
 export default function Home() {
+  React.useEffect(() => {
+    fetch("https://raw.githubusercontent.com/fransachmadhw/all-of-my-projects/main/db.json")
+    .then(res => res.json())
+    .then(data => console.log(data))
+  })
+
   return (
     <div>
       <Head>
@@ -11,6 +19,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Main />
+      <Projects />
     </div>
   )
 }
