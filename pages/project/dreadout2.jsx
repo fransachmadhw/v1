@@ -1,9 +1,7 @@
-import React from 'react'
-
 const dreadout2 = () => {
   return (
     <div>dreadout2</div>
   )
 }
 
-export default dreadout2
+export default dreadout2;
