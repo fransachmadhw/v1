@@ -49,7 +49,7 @@ const Projects = () => {
             <div className='absolute w-full h-full bg-neutral-300 opacity-90 z-[1] duration-300 group-hover:opacity-0'></div>
             <Image
               src="https://repository-images.githubusercontent.com/512594485/ef266c13-d9f5-43a5-8488-dd69c03593c9"
-              alt='blogshot'
+              alt='weather'
               layout='fill'
               className='group-hover:grayscale-0 grayscale duration-300'
             />
@@ -72,7 +72,7 @@ const Projects = () => {
             <div className='absolute w-full h-full bg-neutral-300 opacity-80 z-[1] duration-300 group-hover:opacity-0'></div>
             <Image
               src="https://repository-images.githubusercontent.com/501931143/ed1599a9-2297-40a5-811f-dddf47c24e22"
-              alt='blogshot'
+              alt='trivia'
               layout='fill'
               className='group-hover:grayscale-0 grayscale duration-300'
             />
@@ -95,7 +95,7 @@ const Projects = () => {
             <div className='absolute w-full h-full bg-neutral-300 opacity-90 z-[1] duration-300 group-hover:opacity-0'></div>
             <Image
               src="https://repository-images.githubusercontent.com/431815358/fac7e016-1285-4399-afc9-d1f252b28dca"
-              alt='blogshot'
+              alt='dreadout2'
               layout='fill'
               className='group-hover:grayscale-0 grayscale duration-300'
             />
@@ -103,8 +103,9 @@ const Projects = () => {
               <h2 className='font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center'>DreadOut 2 Website (Remake)</h2>
               <h2 className='font-medium text-center text-neutral-600 leading-[20px] text-base'>A modern blog web-based app which is integrated with GraphCMS, a headless CMS.</h2>
               <div className='flex gap-2'>
-                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>React</div>
-                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>Open Trivia DB</div>
+                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>HTML</div>
+                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>CSS</div>
+                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>SCSS</div>
                 <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>JavaScript</div>
               </div>
             </div>

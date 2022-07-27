@@ -1,6 +1,8 @@
+import Trivia from "../../components/Trivia";
+
 const trivia = () => {
   return (
-    <div>trivia</div>
+    <Trivia />
   )
 }
 

@@ -1,19 +1,32 @@
 import React from 'react'
 import Image from 'next/dist/client/image'
 import Photo from '../public/assets/profile.png'
-// import { ID } from 'country-flag-icons/react/3x2'
 import Link from 'next/link'
-// import { Parallax } from 'react-parallax';
 
 const Main = () => {
-  // const insideStyles = {
-  //   background: "white",
-  //   padding: 20,
-  //   position: "absolute",
-  //   top: "50%",
-  //   left: "50%",
-  //   transform: "translate(-50%,-50%)"
-  // };
+  // const [scrollPositionY, setPositionY] = React.useState()
+  // const [opacity, setOpacity] = React.useState(1)
+
+  // const styled = {
+  //   opacity: opacity
+  // }
+
+  // React.useEffect(() => {
+  //   function updateOpacity() {
+  //     setOpacity(1 - scrollPositionY)
+  //   }
+  //   updateOpacity()
+  // }, [])
+
+  // React.useEffect(() => {
+  //   function updatePosY() {
+  //     setPositionY(window.scrollY / 1000)
+  //   }
+  //   window.addEventListener('scroll', updatePosY)
+  //   updatePosY()
+
+  //   return () => window.removeEventListener('scroll', updatePosY)
+  // }, [])
 
   return (
     <div className='w-full h-screen lg:border-b-2 border-neutral-900'>
@@ -40,7 +53,7 @@ const Main = () => {
               </Link>
             </div>
           </div>
-          <div className='hidden lg:block absolute bottom-0 z-[-1] right-[-25px] w-[55vw] h-[55vw] overflow-hidden duration-500'>
+          <div className="hidden lg:block absolute bottom-0 z-[-1] right-[-25px] w-[55vw] h-[55vw] overflow-hidden duration-500">
             <Image
               src={Photo}
               // layout='responsive'
