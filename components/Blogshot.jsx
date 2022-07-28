@@ -55,8 +55,8 @@ const Blogshot = () => {
                     Demo
                 </h2>
                 <div>
-                    <a href='https://blogshot.vercel.app/' className='hover:underline font-normal text-lg text-neutral-900'>
-                    https://blogshot.vercel.app/
+                    <a href='https://blogshot.vercel.app/' className='hover:underline underline lg:no-underline font-normal text-lg text-neutral-900'>
+                    View live site here
                     </a>
                 </div>
             </div>
@@ -65,7 +65,7 @@ const Blogshot = () => {
                     Code
                 </h2>
                 <div>
-                    <a href='https://github.com/fransachmadhw/blogshot-clone' className='hover:underline font-normal text-lg text-neutral-900'>
+                    <a href='https://github.com/fransachmadhw/blogshot-clone' className='hover:underline underline lg:no-underline font-normal text-lg text-neutral-900'>
                     Available on GitHub
                     </a>
                 </div>
