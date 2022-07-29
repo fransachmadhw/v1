@@ -39,7 +39,7 @@ const Archive = () => {
 
     return (
         <div className='w-full'>
-            <div className='px-[30px] lg:px-[10vw] my-[100px] lg:my-[120px]'>
+            <div className='px-[30px] lg:px-[10vw] my-[120px] lg:my-[120px]'>
                 <div className='flex flex-col gap-2 px-0 md:px-5'>
                     <h2 className='text-7xl text-neutral-900 font-bold'>Archive</h2>
                     <h2 className='font-normal lg:text-left text-lg tracking-[8px] text-neutral-400'>

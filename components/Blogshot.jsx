@@ -79,11 +79,12 @@ const Blogshot = () => {
           </div>
         </div>
         <div className='my-[120px] flex flex-col w-full gap-8 lg:gap-14'>
-            <div className='w-full h-[200px] lg:h-[85vh] relative'>
+            <div className='w-full h-[200px] lg:h-[100vh] relative'>
                 <Image
                     src="https://repository-images.githubusercontent.com/512595032/35aa493f-d5ad-4fdd-97e7-5db7a80352ce"
                     alt='cover'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -91,6 +92,7 @@ const Blogshot = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/blogshot-clone/main/Images/1.JPG"
                     alt='blogshot1'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -98,6 +100,7 @@ const Blogshot = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/blogshot-clone/main/Images/2.JPG"
                     alt='blogshot2'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -105,6 +108,7 @@ const Blogshot = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/blogshot-clone/main/Images/3.JPG"
                     alt='blogshot3'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
         </div>

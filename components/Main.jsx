@@ -37,7 +37,9 @@ const Main = () => {
               layout='responsive'
               objectFit='cover'
               className='grayscale brightness-[115%] contrast-100'
-              alt=''
+              alt='profile'
+              placeholder='blur'
+              priority
             />
           </div>
           <div className='flex lg:h-full h-[450px] justify-center w-full items-center lg:items-start flex-col gap-5 bg-transparent z-[100]'>
@@ -59,7 +61,9 @@ const Main = () => {
               // layout='responsive'
               objectFit='cover'
               className='grayscale brightness-[115%] contrast-100'
-              alt=''
+              alt='profile'
+              placeholder='blur'
+              priority
             />
           </div>
         </div>

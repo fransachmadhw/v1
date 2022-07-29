@@ -84,6 +84,7 @@ const NextWeather = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/1.JPG"
                     alt='weather1'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -91,6 +92,7 @@ const NextWeather = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/2.JPG"
                     alt='weather2'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -98,6 +100,7 @@ const NextWeather = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/3.JPG"
                     alt='weather3'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -105,6 +108,7 @@ const NextWeather = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/4.JPG"
                     alt='weather4'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -112,6 +116,7 @@ const NextWeather = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/5.JPG"
                     alt='weather5'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
         </div>

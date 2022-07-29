@@ -29,6 +29,7 @@ const Projects = () => {
               alt='blogshot'
               layout='fill'
               className='group-hover:grayscale-0 grayscale duration-300'
+              objectFit='cover'
             />
             <div className='absolute w-full h-full z-[2] flex p-5 gap-3 flex-col justify-center items-center duration-300 group-hover:hidden'>
               <h2 className='font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center'>Blogshot</h2>
@@ -52,6 +53,7 @@ const Projects = () => {
               alt='weather'
               layout='fill'
               className='group-hover:grayscale-0 grayscale duration-300'
+              objectFit='cover'
             />
             <div className='absolute w-full h-full z-[2] flex p-5 gap-3 flex-col justify-center items-center duration-300 group-hover:hidden'>
               <h2 className='font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center'>Next Ultimate Weather App</h2>
@@ -75,6 +77,7 @@ const Projects = () => {
               alt='trivia'
               layout='fill'
               className='group-hover:grayscale-0 grayscale duration-300'
+              objectFit='cover'
             />
             <div className='absolute w-full h-full z-[2] flex p-5 gap-3 flex-col justify-center items-center duration-300 group-hover:hidden'>
               <h2 className='font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center'>React Trivia</h2>
@@ -98,6 +101,7 @@ const Projects = () => {
               alt='dreadout2'
               layout='fill'
               className='group-hover:grayscale-0 grayscale duration-300'
+              objectFit='cover'
             />
             <div className='absolute w-full h-full z-[2] flex p-5 gap-3 flex-col justify-center items-center duration-300 group-hover:hidden'>
               <h2 className='font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center'>DreadOut 2 Website (Remake)</h2>

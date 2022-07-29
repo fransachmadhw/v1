@@ -87,6 +87,7 @@ const DreadOut2 = () => {
                     src="https://repository-images.githubusercontent.com/431815358/fac7e016-1285-4399-afc9-d1f252b28dca"
                     alt='cover'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -94,6 +95,7 @@ const DreadOut2 = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/1.JPG"
                     alt='d1'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -101,6 +103,7 @@ const DreadOut2 = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/2.JPG"
                     alt='d2'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -108,6 +111,7 @@ const DreadOut2 = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/3.JPG"
                     alt='d3'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -115,6 +119,7 @@ const DreadOut2 = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/4.JPG"
                     alt='d4'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -122,6 +127,7 @@ const DreadOut2 = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/5.JPG"
                     alt='d5'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -129,6 +135,7 @@ const DreadOut2 = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/6.JPG"
                     alt='d6'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -136,6 +143,7 @@ const DreadOut2 = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/7.JPG"
                     alt='d7'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
         </div>

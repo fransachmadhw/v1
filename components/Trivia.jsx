@@ -78,6 +78,7 @@ const Trivia = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/Trivia-React/main/Images/1.JPG"
                     alt='trivia1'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -85,6 +86,7 @@ const Trivia = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/Trivia-React/main/Images/2.JPG"
                     alt='trivia2'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -92,6 +94,7 @@ const Trivia = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/Trivia-React/main/Images/3.JPG"
                     alt='trivia3'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
             <div className='w-full h-[200px] lg:h-[90vh] relative'>
@@ -99,6 +102,7 @@ const Trivia = () => {
                     src="https://raw.githubusercontent.com/fransachmadhw/Trivia-React/main/Images/4.JPG"
                     alt='trivia4'
                     layout='fill'
+                    objectFit='cover'
                 />
             </div>
         </div>
