@@ -112,6 +112,12 @@ const Projects = () => {
           </div>
         </Link>
       </div>
+      <div className='my-[100px] w-full text-center'>
+        <h2 className='text-2xl font-bold text-neutral-900 my-3'>Looking for other projects?</h2>
+        <Link href="/archive">
+          <button className='p-3 border-2 border-neutral-400 hover:-translate-y-2 duration-300 text-neutral-500'>View Archive</button>
+        </Link>
+      </div>
     </div>
   )
 }
