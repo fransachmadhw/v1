@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import { AiOutlineClose, AiOutlineInstagram, AiOutlineMenu, AiFillYoutube } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const Navbar = () => {
   const [nav, setNav] = React.useState(false)
