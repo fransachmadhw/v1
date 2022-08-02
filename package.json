@@ -11,7 +11,9 @@
   "dependencies": {
     "@fontsource/jost": "^4.5.10",
     "@googlemaps/react-wrapper": "^1.1.35",
+    "@react-google-maps/api": "^2.12.1",
     "country-flag-icons": "^1.5.5",
+    "google-maps-react": "^2.0.6",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.34",
     "next": "12.2.2",
