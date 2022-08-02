@@ -2,7 +2,7 @@ import React from 'react'
 // import { GoogleMap, useJsApiLoader, MarkerF } from '@react-google-maps/api';
 import Link from 'next/dist/client/link'
 import { BsEmojiSmile } from 'react-icons/bs'
-import MapImage from '../public/assets/map.jpg'
+import MapImage from '../public/assets/map.png'
 import Image from 'next/image'
 
 const Contact = () => {
