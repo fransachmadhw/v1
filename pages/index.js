@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Main from '../components/Main'
 import Projects from '../components/Projects'
+import PreFooter from '../components/PreFooter'
 
 export default function Home() {
   // const [scrollPositionY, setPositionY] = React.useState()
@@ -29,6 +30,7 @@ export default function Home() {
       </Head>
       <Main />
       <Projects />
+      <PreFooter />
     </div>
   )
 }

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full px-[30px] lg:px-[10vw] my-[20px] lg:my-[80px]'>
+    <div id='projects' className='w-full px-[30px] lg:px-[10vw] mt-[20px] lg:mt-[80px]'>
       <div className='flex flex-col gap-3 my-5'>
         <div className='uppercase'>
           <h2 className='font-normal text-center lg:text-left text-lg tracking-[8px] text-neutral-400'>
@@ -116,7 +116,7 @@ const Projects = () => {
           </div>
         </Link>
       </div>
-      <div className='my-[100px] w-full text-center'>
+      <div className='mt-[80px] w-full text-center'>
         <h2 className='text-2xl font-bold text-neutral-900 my-3'>Looking for other projects?</h2>
         <Link href="/archive">
           <button className='p-3 border-2 border-neutral-400 hover:-translate-y-2 duration-300 text-neutral-500'>View Archive</button>

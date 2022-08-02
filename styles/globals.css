@@ -89,12 +89,11 @@ li {
   @apply block;
 }
 
-@keyframes scrolling {
-  0% {
-    transform: translateX(0);
-  }
+.pre:hover::after {
+  @apply block;
+}
 
-  100% {
-    transform: translateX(-100%);
-  }
+.pre::after {
+  @apply absolute w-full h-[4px] lg:h-[7px] bg-neutral-900 lg:hidden bottom-[-4px] lg:bottom-0;
+  content: '';
 }

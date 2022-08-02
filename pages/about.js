@@ -1,8 +1,12 @@
 import About from '../components/About';
+import PreFooter from '../components/PreFooter';
 
 const about = () => {
   return (
-    <About />
+    <>
+      <About />
+      <PreFooter />
+    </>
   )
 }
 

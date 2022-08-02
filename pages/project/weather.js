@@ -1,8 +1,12 @@
 import NextWeather from "../../components/NextWeather";
+import PreFooter from "../../components/PreFooter";
 
 const weather = () => {
   return (
-    <NextWeather />
+    <>
+      <NextWeather />
+      <PreFooter />
+    </>
   )
 }
 
