@@ -1,42 +1,56 @@
 import React from 'react'
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+// import { GoogleMap, useJsApiLoader, MarkerF } from '@react-google-maps/api';
 import Link from 'next/dist/client/link'
 import { BsEmojiSmile } from 'react-icons/bs'
+import MapImage from '../public/assets/map.jpg'
+import Image from 'next/image'
 
 const Contact = () => {
-    const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-    });
+//     const { isLoaded } = useJsApiLoader({
+//         googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+//     });
 
-    const center = {
-      lat: -7.934881,
-      lng: 112.578028
-    };
+//     const center = {
+//       lat: -7.934881,
+//       lng: 112.578028
+//     };
 
-    const options = {
-        mapId: "57d9e6fa8b9f0027"
-    };
+//     const options = {
+//         mapId: "57d9e6fa8b9f0027"
+//     };
 
-    const zoom = 5;
+//     const zoom = 5;
 
-    const [map, setMap] = React.useState(null)
+//     const [map, setMap] = React.useState(null)
 
-    const onLoad = React.useCallback(function callback(map) {
-        const bounds = new window.google.maps.LatLngBounds(center);
-        map.fitBounds(bounds);
-        setMap(map)
-    }, [])
+//     const onLoad = React.useCallback(function callback(map) {
+//         const bounds = new window.google.maps.LatLngBounds(center);
+//         map.fitBounds(bounds);
+//         setMap(map)
+//     }, [])
 
-    const onUnmount = React.useCallback(function callback(map) {
-      setMap(null)
-    }, [])
+//     const onUnmount = React.useCallback(function callback(map) {
+//       setMap(null)
+//     }, [])
+
+//       const svgMarker = (<BsEmojiSmile />)
+
+//   const image =
+//     "https://img.icons8.com/ios-filled/50/FFFFFF/marker.png";
 
 
   return (
     <div className='w-full'>
         <div className='my-[110px] w-full'>
-            <div className='w-full h-[400px]'>
-                {isLoaded ? (
+            <div className='w-full h-[400px] relative'>
+                <Image
+                    src={MapImage}
+                    layout='fill'
+                    objectFit='cover'
+                    objectPosition='center'
+                    placeholder='blur'
+                />
+                {/* {isLoaded ? (
                     <GoogleMap
                         zoom={6}
                         minZoom={3}
@@ -48,11 +62,12 @@ const Contact = () => {
                         onUnmount={onUnmount}
                         gestureHandling='cooperative'
                     >
-                        <Marker
+                        <MarkerF
                             position={center}
+                            icon={image}
                         />
                     </GoogleMap>
-                ) : <div className='flex w-full h-full justify-center items-center'>Loading Maps...</div>}
+                ) : <div className='flex w-full h-full justify-center items-center'>Loading Maps...</div>} */}
 
             </div>
             <div className='my-[80px] px-[30px] lg:px-[10vw]'>
