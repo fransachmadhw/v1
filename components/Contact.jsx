@@ -3,14 +3,8 @@ import React from 'react'
 import { BsEmojiSmile } from 'react-icons/bs'
 import MapImage from '../public/assets/map.png'
 import Image from 'next/image'
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Contact = () => {
-    React.useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, [])
 //     const { isLoaded } = useJsApiLoader({
 //         googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
 //     });
@@ -75,7 +69,7 @@ const Contact = () => {
                 ) : <div className='flex w-full h-full justify-center items-center'>Loading Maps...</div>} */}
 
             </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='my-[80px] px-[30px] lg:px-[10vw]'>
+            <div className='my-[80px] px-[30px] lg:px-[10vw]'>
                 <div className='w-full h-full flex flex-col justify-center items-center'>
                     <div className='flex flex-col justify-center items-center gap-4'>
                         <h2 className='font-normal text-center text-lg tracking-[6px] text-neutral-400'>

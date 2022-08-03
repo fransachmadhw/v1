@@ -68,7 +68,7 @@ const Navbar = () => {
                 <Link href='/about'>
                   <li onClick={() => setNav(false)} className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[1s]`}>About</li>
                 </Link>
-                <Link href='/#contact'>
+                <Link href='/contact'>
                   <li onClick={() => setNav(false)} className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-5xl font-medium hover:cursor-pointer duration-1000 ease-in-out delay-[1.1s]`}>Contact</li>
                 </Link>
               </ul>

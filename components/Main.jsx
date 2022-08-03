@@ -2,14 +2,6 @@ import React from 'react'
 import Image from 'next/dist/client/image'
 import Photo from '../public/assets/profile.png'
 import Link from 'next/link'
-import dynamic from "next/dynamic";
-
-const Animator = dynamic(
-  import("react-scroll-motion").then((it) => it.Animator),
-  { ssr: false }
-);
-
-import { ScrollContainer, ScrollPage, Fade } from "react-scroll-motion";
 
 const Main = () => {
   // const [scrollPositionY, setPositionY] = React.useState()
@@ -37,8 +29,6 @@ const Main = () => {
   // }, [])
 
   return (
-    <ScrollContainer>
-      <ScrollPage>
     <div className='w-full h-screen lg:border-b-2 border-neutral-900'>
         <div className='flex w-full h-full flex-col lg:flex-row justify-center items-center px-[30px] lg:px-[10vw]'>
           <div className='lg:hidden rounded-full w-[250px] h-[250px] border-2 border-neutral-300 overflow-hidden'>
@@ -65,8 +55,6 @@ const Main = () => {
               </Link>
             </div>
           </div>
-
-          <Animator animation={Fade()}>
           <div className="hidden lg:block absolute bottom-0 z-[-1] right-[-25px] w-[55vw] h-[55vw] overflow-hidden duration-500">
             <Image
               src={Photo}
@@ -78,7 +66,6 @@ const Main = () => {
               priority
             />
           </div>
-          </Animator>
         </div>
         {/* <div className='contoh flex w-full h-full justify-center items-center drop-shadow-xl opacity-[80%] absolute bottom-[30%] lg:bottom-[0%] overflow-hidden text-neutral-50 z-[-1]'>
           <h1 className='uppercase custom-heading text-[100px] sm:text-[150px] whitespace-nowrap font-bold'>
@@ -86,8 +73,6 @@ const Main = () => {
           </h1>
         </div> */}
     </div>
-    </ScrollPage>
-    </ScrollContainer>
   )
 }
 
