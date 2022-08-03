@@ -1,7 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Blogshot = () => {
+    React.useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, [])
   return (
     <div className="w-full">
       <div className="w-full px-[30px] lg:px-[5vw] my-[140px] lg:my-[120px]">
@@ -71,7 +77,7 @@ const Blogshot = () => {
                 </div>
             </div>
           </div>
-          <div className="">
+          <div data-aos="fade-up" data-aos-anchor-placement="top-center" className="">
               <div>
                   <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>Blogshot is a modern blog web-based app which is integrated with GraphCMS, a headless CMS. My lecturer asked us to create a management system app as a final project, instead, I decided to create something more modern and less technical, I chose a blog app. Blogshot can be considered a personal blog publishing which is you can write your blog and publish it to Blogshot via GraphCMS.</p>
                   <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>The key point in this project is the technology I used, especially Next.js. This one is so powerful and a bit complicated for sure. All blogs there come from GraphCMS which I already managed it before writing the code.</p>
@@ -79,7 +85,7 @@ const Blogshot = () => {
           </div>
         </div>
         <div className='my-[120px] flex flex-col w-full gap-8 lg:gap-14'>
-            <div className='w-full h-[200px] lg:h-[100vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[100vh] relative'>
                 <Image
                     src="https://repository-images.githubusercontent.com/512595032/35aa493f-d5ad-4fdd-97e7-5db7a80352ce"
                     alt='cover'
@@ -87,7 +93,7 @@ const Blogshot = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/blogshot-clone/main/Images/1.JPG"
                     alt='blogshot1'
@@ -95,7 +101,7 @@ const Blogshot = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/blogshot-clone/main/Images/2.JPG"
                     alt='blogshot2'
@@ -103,7 +109,7 @@ const Blogshot = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/blogshot-clone/main/Images/3.JPG"
                     alt='blogshot3'

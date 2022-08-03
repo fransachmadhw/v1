@@ -1,7 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DreadOut2 = () => {
+    React.useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, [])
   return (
     <div className="w-full">
       <div className="w-full px-[30px] lg:px-[5vw] my-[140px] lg:my-[120px]">
@@ -74,7 +80,7 @@ const DreadOut2 = () => {
                 </div>
             </div>
           </div>
-          <div className="">
+          <div data-aos="fade-up" data-aos-anchor-placement="top-center" className="">
               <div>
                   <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>I am not a fan of horror games. However, there is a popular title in Indonesia especially horror. Yes, it is DreadOut. So in my spare time, I decided to do a small practice related to website coding, by creating my own version of DreadOut 2 website.</p>
                   <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>If I am not mistaken, it took a month to finish the whole part. Even, I used help from Bootstrap 5 haha. Apart from that, I was so proud while doing this project. It forced me to learn more about DreadOut 2, gather lots of information from the dev, learn deeply about the gameplay itself and so forth.</p>
@@ -82,7 +88,7 @@ const DreadOut2 = () => {
           </div>
         </div>
         <div className='my-[120px] flex flex-col w-full gap-8 lg:gap-14'>
-            <div className='w-full h-[200px] lg:h-[91vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[91vh] relative'>
                 <Image
                     src="https://repository-images.githubusercontent.com/431815358/fac7e016-1285-4399-afc9-d1f252b28dca"
                     alt='cover'
@@ -90,7 +96,7 @@ const DreadOut2 = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/1.JPG"
                     alt='d1'
@@ -98,7 +104,7 @@ const DreadOut2 = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/2.JPG"
                     alt='d2'
@@ -106,7 +112,7 @@ const DreadOut2 = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/3.JPG"
                     alt='d3'
@@ -114,7 +120,7 @@ const DreadOut2 = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/4.JPG"
                     alt='d4'
@@ -122,7 +128,7 @@ const DreadOut2 = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/5.JPG"
                     alt='d5'
@@ -130,7 +136,7 @@ const DreadOut2 = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/6.JPG"
                     alt='d6'
@@ -138,7 +144,7 @@ const DreadOut2 = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/DreadOut2_Website/main/Images/7.JPG"
                     alt='d7'

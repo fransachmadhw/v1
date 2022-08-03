@@ -1,7 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const NextWeather = () => {
+    React.useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, [])
   return (
     <div className="w-full">
       <div className="w-full px-[30px] lg:px-[5vw] my-[140px] lg:my-[120px]">
@@ -71,7 +77,7 @@ const NextWeather = () => {
                 </div>
             </div>
           </div>
-          <div className="">
+          <div data-aos="fade-up" data-aos-anchor-placement="top-center" className="">
               <div>
                   <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>Next weather is an ultimate weather app which you can find the city weather around the world. The app shows you many kind of estimated weather such as daily weather, hourly weather, weekly weather and so forth.</p>
                   <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>I did not write any estimated weather based on my mind. That is impossible. Instead, I gathered them from OpenWeatherMap API with a free service. One thing that I love from this app is we are able to use the search box (and city name suggestions will show depend on the keyword you write it down). Hovewer, the disadvantage is not every city in the world can be shown in the suggestion since I did use an external JSON for every city suggestion. Not from OpenWeatherMap API.</p>
@@ -79,7 +85,7 @@ const NextWeather = () => {
           </div>
         </div>
         <div className='my-[120px] flex flex-col w-full gap-8 lg:gap-14'>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/1.JPG"
                     alt='weather1'
@@ -87,7 +93,7 @@ const NextWeather = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/2.JPG"
                     alt='weather2'
@@ -95,7 +101,7 @@ const NextWeather = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/3.JPG"
                     alt='weather3'
@@ -103,7 +109,7 @@ const NextWeather = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/4.JPG"
                     alt='weather4'
@@ -111,7 +117,7 @@ const NextWeather = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/5.JPG"
                     alt='weather5'

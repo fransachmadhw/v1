@@ -1,7 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Trivia = () => {
+    React.useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, [])
   return (
     <div className="w-full">
       <div className="w-full px-[30px] lg:px-[5vw] my-[140px] lg:my-[120px]">
@@ -65,7 +71,7 @@ const Trivia = () => {
                 </div>
             </div>
           </div>
-          <div className="">
+          <div data-aos="fade-up" data-aos-anchor-placement="top-center" className="">
               <div>
                   <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>One of my project and also my final assignment for a free React Course held by <a href='https://scrimba.com/learn/learnreact' className='underline hover:text-neutral-900'>Scrimba Community</a>. It was fun to attend that course. They made the materials that will not make the learner feels bored too fast.</p>
                   <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>This project uses an API from OpenTrivia. They provide a lot of quiz there. I made a feature which the player can adjust the difficulty, number of questions, and the quiz topic.</p>
@@ -73,7 +79,7 @@ const Trivia = () => {
           </div>
         </div>
         <div className='my-[120px] flex flex-col w-full gap-8 lg:gap-14'>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/Trivia-React/main/Images/1.JPG"
                     alt='trivia1'
@@ -81,7 +87,7 @@ const Trivia = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/Trivia-React/main/Images/2.JPG"
                     alt='trivia2'
@@ -89,7 +95,7 @@ const Trivia = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/Trivia-React/main/Images/3.JPG"
                     alt='trivia3'
@@ -97,7 +103,7 @@ const Trivia = () => {
                     objectFit='cover'
                 />
             </div>
-            <div className='w-full h-[200px] lg:h-[90vh] relative'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
                     src="https://raw.githubusercontent.com/fransachmadhw/Trivia-React/main/Images/4.JPG"
                     alt='trivia4'

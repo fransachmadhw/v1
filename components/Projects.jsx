@@ -1,11 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
+  React.useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, [])
+
   return (
     <div id='projects' className='w-full px-[30px] lg:px-[10vw] mt-[20px] lg:mt-[80px]'>
-      <div className='flex flex-col gap-3 my-5'>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-center" className='flex flex-col gap-3 my-5'>
         <div className='uppercase'>
           <h2 className='font-normal text-center lg:text-left text-lg tracking-[8px] text-neutral-400'>
             Selected Projects
@@ -17,7 +24,7 @@ const Projects = () => {
           </h3>
         </div>
       </div>
-      <div className='my-10 grid md:grid-cols-2 grid-cols-1 gap-4'>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className='my-10 grid md:grid-cols-2 grid-cols-1 gap-4'>
         <Link href="/project/blogshot">
           <div className='h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer'>
             <div className='absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300'>
@@ -116,7 +123,7 @@ const Projects = () => {
           </div>
         </Link>
       </div>
-      <div className='mt-[80px] w-full text-center'>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className='mt-[80px] w-full text-center'>
         <h2 className='text-2xl font-bold text-neutral-900 my-3'>Looking for other projects?</h2>
         <Link href="/archive">
           <button className='p-3 border-2 border-neutral-400 hover:-translate-y-2 duration-300 text-neutral-500'>View Archive</button>

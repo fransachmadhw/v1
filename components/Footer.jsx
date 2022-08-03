@@ -1,12 +1,18 @@
 import React from 'react'
 import moment from 'moment-timezone'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { AiOutlineClose, AiOutlineInstagram, AiOutlineMenu, AiFillYoutube } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
+  React.useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, [])
     const a = moment().tz("Asia/Jakarta");
   return (
-    <div className='w-full h-[200px] lg:h-[20vh]'>
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className='w-full h-[200px] lg:h-[20vh]'>
         <div className='px-[30px] lg:px-[10vw] w-full h-full'>
             <div className='border-t-2 border-neutral-200 flex flex-col md:flex-row gap-1 md:gap-10 text-center md:text-left w-full h-full items-center justify-between'>
                 <div className='flex items-center h-full gap-10'>
