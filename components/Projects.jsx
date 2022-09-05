@@ -25,6 +25,30 @@ const Projects = () => {
         </div>
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className='my-10 grid md:grid-cols-2 grid-cols-1 gap-4'>
+        <Link href="/project/nft">
+          <div className='h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer'>
+            <div className='absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300'>
+              2022
+            </div>
+            <div className='absolute w-full h-full bg-neutral-300 opacity-80 z-[1] duration-300 group-hover:opacity-0'></div>
+            <Image
+              src="https://repository-images.githubusercontent.com/522400800/00e2b640-6114-4c14-a1c7-519682f87a85"
+              alt='nft'
+              layout='fill'
+              className='group-hover:grayscale-0 grayscale duration-300'
+              objectFit='cover'
+            />
+            <div className='absolute w-full h-full z-[2] flex p-5 gap-3 flex-col justify-center items-center duration-300 group-hover:hidden'>
+              <h2 className='font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center'>Mobile NFT Marketplace</h2>
+              <h2 className='font-medium text-center text-neutral-600 leading-[20px] text-base'>A modern UI/UX NFT Mobile Marketplace built with React Native.</h2>
+              <div className='flex gap-2'>
+                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>React Native</div>
+                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>Expo</div>
+                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>JavaScript</div>
+              </div>
+            </div>
+          </div>
+        </Link>
         <Link href="/project/blogshot">
           <div className='h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer'>
             <div className='absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300'>
@@ -64,34 +88,10 @@ const Projects = () => {
             />
             <div className='absolute w-full h-full z-[2] flex p-5 gap-3 flex-col justify-center items-center duration-300 group-hover:hidden'>
               <h2 className='font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center'>Next Ultimate Weather App</h2>
-              <h2 className='font-medium text-center text-neutral-600 leading-[20px] text-base'>A modern blog web-based app which is integrated with GraphCMS, a headless CMS.</h2>
+              <h2 className='font-medium text-center text-neutral-600 leading-[20px] text-base'>An ultimate weather app that shows weathers based on daily, hourly, weekly, etc.</h2>
               <div className='flex gap-2'>
                 <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>Next.js</div>
                 <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>OpenWeatherMap</div>
-                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>JavaScript</div>
-              </div>
-            </div>
-          </div>
-        </Link>
-        <Link href="/project/trivia">
-          <div className='h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer'>
-            <div className='absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300'>
-              2022
-            </div>
-            <div className='absolute w-full h-full bg-neutral-300 opacity-80 z-[1] duration-300 group-hover:opacity-0'></div>
-            <Image
-              src="https://repository-images.githubusercontent.com/501931143/ed1599a9-2297-40a5-811f-dddf47c24e22"
-              alt='trivia'
-              layout='fill'
-              className='group-hover:grayscale-0 grayscale duration-300'
-              objectFit='cover'
-            />
-            <div className='absolute w-full h-full z-[2] flex p-5 gap-3 flex-col justify-center items-center duration-300 group-hover:hidden'>
-              <h2 className='font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center'>React Trivia</h2>
-              <h2 className='font-medium text-center text-neutral-600 leading-[20px] text-base'>A modern blog web-based app which is integrated with GraphCMS, a headless CMS.</h2>
-              <div className='flex gap-2'>
-                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>React</div>
-                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>Open Trivia DB</div>
                 <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>JavaScript</div>
               </div>
             </div>
@@ -112,7 +112,7 @@ const Projects = () => {
             />
             <div className='absolute w-full h-full z-[2] flex p-5 gap-3 flex-col justify-center items-center duration-300 group-hover:hidden'>
               <h2 className='font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center'>DreadOut 2 Website (Remake)</h2>
-              <h2 className='font-medium text-center text-neutral-600 leading-[20px] text-base'>A modern blog web-based app which is integrated with GraphCMS, a headless CMS.</h2>
+              <h2 className='font-medium text-center text-neutral-600 leading-[20px] text-base'>Remake of Official DreadOut 2 Website.</h2>
               <div className='flex gap-2'>
                 <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>HTML</div>
                 <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>CSS</div>
