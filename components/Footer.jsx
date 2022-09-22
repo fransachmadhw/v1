@@ -6,11 +6,31 @@ import { AiOutlineClose, AiOutlineInstagram, AiOutlineMenu, AiFillYoutube } from
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
+  const [jam, setJam] = React.useState(0);
+  const [menit, setMenit] = React.useState(0);
+
   React.useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, [])
-    const a = moment().tz("Asia/Jakarta");
+    AOS.init();
+    AOS.refresh();
+    const interval = setInterval(() => {
+      setJam(jam => {
+        d = new Date();
+        return (
+          d.getHours()
+        )
+      })
+      setMenit(menit => {
+        d = new Date();
+        return (
+          d.getMinutes()
+        )
+      })
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [])
+
+  let d;
+
   return (
     <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className='w-full h-[200px] lg:h-[20vh]'>
         <div className='px-[30px] lg:px-[10vw] w-full h-full'>
@@ -22,7 +42,10 @@ const Footer = () => {
                     </div>
                     <div>
                         <h2 className='mb-3 uppercase font-normal text-sm tracking-[2px] text-neutral-400'>Local time</h2>
-                        <h2 className='uppercase font-bold text-base text-neutral-900'>{a.format("LT")}</h2>
+                        <h2 className='uppercase font-bold text-base text-neutral-900'>{jam % 12 > 0 ? jam % 12 : jam}:{menit}{
+                          jam >= 12 ? ' pm' : ' am'
+                        }</h2>
+                        {/* <button onClick={klik}>Click</button> */}
                     </div>
 
                 </div>
