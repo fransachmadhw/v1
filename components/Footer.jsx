@@ -53,7 +53,7 @@ const Footer = () => {
                     <p className={`uppercase font-normal text-sm tracking-[2px] text-neutral-400 mb-3`}>Let&apos;s connect</p>
                     <div className={`flex items-center gap-5 text-xl`}>
                 <a
-                  href='https://www.linkedin.com/in/fransahw'
+                  href='https://www.linkedin.com/in/fransachmadhw'
                   target='_blank'
                   rel='noreferrer'
                 >
