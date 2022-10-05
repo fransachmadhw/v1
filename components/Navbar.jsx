@@ -77,7 +77,7 @@ const Navbar = () => {
               <p className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} text-sm font-semibold text-neutral-500 py-4 duration-1000 ease-in-out delay-[1.6s]`}>Let&apos;s connect</p>
               <div className={`${nav ? 'translate-x-0 opacity-100' : 'translate-x-[600px] opacity-0'} flex items-center gap-10 text-xl duration-1000 ease-in-out delay-[1.7s]`}>
                 <a
-                  href='https://www.linkedin.com/in/fransahw'
+                  href='https://www.linkedin.com/in/fransachmadhw'
                   target='_blank'
                   rel='noreferrer'
                 >
