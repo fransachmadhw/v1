@@ -5,22 +5,6 @@ import Projects from '../components/Projects'
 import PreFooter from '../components/PreFooter'
 
 export default function Home() {
-  // const [scrollPositionY, setPositionY] = React.useState()
-
-  // React.useEffect(() => {
-  //   // fetch("https://raw.githubusercontent.com/fransachmadhw/all-of-my-projects/main/db.json")
-  //   // .then(res => res.json())
-  //   // .then(data => console.log(data))
-  //   function updatePosY() {
-  //     setPositionY(window.scrollY)
-  //   }
-  //   window.addEventListener('scroll', updatePosY)
-  //   updatePosY()
-
-  //   return () => window.removeEventListener('scroll', updatePosY)
-  // }, [])
-
-  // console.log(scrollPositionY / 1000)
 
   return (
     <div>

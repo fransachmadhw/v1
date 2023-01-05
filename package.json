@@ -9,24 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource/jost": "^4.5.10",
+    "@fontsource/jost": "^4.5.12",
     "@googlemaps/react-wrapper": "^1.1.35",
-    "@react-google-maps/api": "^2.12.1",
+    "@react-google-maps/api": "^2.17.1",
     "aos": "^2.3.4",
     "google-maps-react": "^2.0.6",
     "moment": "^2.29.4",
-    "moment-timezone": "^0.5.34",
+    "moment-timezone": "^0.5.40",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0",
-    "react-scroll-motion": "^0.3.0"
+    "react-icons": "^4.7.1",
+    "react-scroll-motion": "^0.3.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
+    "autoprefixer": "^10.4.13",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.2",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.4"
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
   }
 }

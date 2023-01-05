@@ -3,7 +3,7 @@ import Image from 'next/image'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const NextWeather = () => {
+const Peanut = () => {
     React.useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -19,7 +19,7 @@ const NextWeather = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-0">
           <div className="flex flex-col gap-5 lg:gap-10">
             <div className="w-full lg:w-[70%]">
-              <h2 className="font-black text-neutral-900 text-3xl md:text-5xl">Next Weather - An ultimate weather app</h2>
+              <h2 className="font-black text-neutral-900 text-3xl md:text-5xl">Peanut Guy - 3D Platformer Game similar to Fall Guys and Stumble Guys</h2>
             </div>
             <div className="w-full lg:w-[70%] flex flex-col gap-1">
                 <h2 className='uppercase font-normal text-lg tracking-[8px] text-neutral-400'>
@@ -27,22 +27,10 @@ const NextWeather = () => {
                 </h2>
                 <div>
                     <h2 className='font-normal text-lg text-neutral-900'>
-                        Next.js
+                        Unity Engine
                     </h2>
                     <h2 className='font-normal text-lg text-neutral-900'>
-                        OpenWeatherMap API
-                    </h2>
-                    <h2 className='font-normal text-lg text-neutral-900'>
-                        JavaScript
-                    </h2>
-                    <h2 className='font-normal text-lg text-neutral-900'>
-                        React
-                    </h2>
-                    <h2 className='font-normal text-lg text-neutral-900'>
-                        Tailwind CSS
-                    </h2>
-                    <h2 className='font-normal text-lg text-neutral-900'>
-                        SASS
+                        C#
                     </h2>
                 </div>
             </div>
@@ -61,7 +49,7 @@ const NextWeather = () => {
                     Demo
                 </h2>
                 <div>
-                    <a href='https://nextjs-weather-app-sepia.vercel.app/' className='hover:underline underline lg:no-underline font-normal text-lg text-neutral-900'>
+                    <a href='https://fransachmadhw.itch.io/peanutguy' className='hover:underline underline lg:no-underline font-normal text-lg text-neutral-900'>
                     View live site here
                     </a>
                 </div>
@@ -71,7 +59,7 @@ const NextWeather = () => {
                     Code
                 </h2>
                 <div>
-                    <a href='https://github.com/fransachmadhw/nextjs-weather-app-clone' className='hover:underline font-normal text-lg text-neutral-900'>
+                    <a href='https://github.com/fransachmadhw/unity-peanut-guy' className='hover:underline font-normal text-lg text-neutral-900'>
                     Available on GitHub
                     </a>
                 </div>
@@ -79,48 +67,33 @@ const NextWeather = () => {
           </div>
           <div data-aos="fade-up" data-aos-anchor-placement="top-center" className="">
               <div>
-                  <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>Next weather is an ultimate weather app which you can find the city weather around the world. The app shows you many kind of estimated weather such as daily weather, hourly weather, weekly weather and so forth.</p>
-                  <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>I did not write any estimated weather based on my mind. That is impossible. Instead, I gathered them from OpenWeatherMap API with a free service. One thing that I love from this app is we are able to use the search box (and city name suggestions will show depend on the keyword you write it down). Hovewer, the disadvantage is not every city in the world can be shown in the suggestion since I did use an external JSON for every city suggestion. Not from OpenWeatherMap API.</p>
+                  <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>You play as a Peanut in a fantasy world where monsters constantly chase the player. The player needs to reach the finish portal to save his life. Collect the needed keys (5 keys in total), avoid monsters, pass all obstacles, reach the portal and done. Simple as that.</p>
+                  <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>There are 5 levels which each has different difficulty from easy to hard. Some of assets used gathered from Unity Asset Store for instance Player Model, Monster Model, etc.</p>
+                  <p className='text-neutral-400 text-xl lg:text-2xl mb-8'>Speaking in which, this game is available to download for free on <a className='underline' href='https://fransachmadhw.itch.io/peanutguy' target={'_blank'}>itch.io</a>. Also, compatible with MacOS, Windows and Linux.</p>
               </div>
           </div>
         </div>
         <div className='my-[120px] flex flex-col w-full gap-8 lg:gap-14'>
             <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
-                    src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/1.JPG"
-                    alt='weather1'
+                    src="https://repository-images.githubusercontent.com/562682351/881dd94e-ae01-419a-8ec5-9dc2aea6dfe6"
+                    alt='peanut1'
                     layout='fill'
                     objectFit='cover'
                 />
             </div>
             <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
-                    src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/2.JPG"
-                    alt='weather2'
+                    src="https://img.itch.zone/aW1hZ2UvMTgyMDE1Ny8xMDcxNDY0NC5qcGc=/original/jx%2Fkzd.jpg"
+                    alt='peanut2'
                     layout='fill'
                     objectFit='cover'
                 />
             </div>
             <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
                 <Image
-                    src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/3.JPG"
-                    alt='weather3'
-                    layout='fill'
-                    objectFit='cover'
-                />
-            </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
-                <Image
-                    src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/4.JPG"
-                    alt='weather4'
-                    layout='fill'
-                    objectFit='cover'
-                />
-            </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='w-full h-[200px] lg:h-[90vh] relative'>
-                <Image
-                    src="https://raw.githubusercontent.com/fransachmadhw/nextjs-weather-app-clone/main/Images/5.JPG"
-                    alt='weather5'
+                    src="https://img.itch.zone/aW1hZ2UvMTgyMDE1Ny8xMDcxNDcyNS5qcGc=/original/i3tdhN.jpg"
+                    alt='peanut3'
                     layout='fill'
                     objectFit='cover'
                 />
@@ -131,4 +104,4 @@ const NextWeather = () => {
   )
 }
 
-export default NextWeather
+export default Peanut
