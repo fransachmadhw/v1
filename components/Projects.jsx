@@ -25,6 +25,29 @@ const Projects = () => {
         </div>
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className='my-10 grid md:grid-cols-2 grid-cols-1 gap-4'>
+        <Link href="/project/lucely">
+          <div className='h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer'>
+            <div className='absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300'>
+              2023
+            </div>
+            <div className='absolute w-full h-full bg-neutral-300 opacity-90 z-[1] duration-300 group-hover:opacity-0'></div>
+            <Image
+              src="https://raw.githubusercontent.com/fransachmadhw/flutter-ui-lucely/main/Lucely-HD-Cover.jpg"
+              alt='lucely'
+              layout='fill'
+              className='group-hover:grayscale-0 grayscale duration-300'
+              objectFit='cover'
+            />
+            <div className='absolute w-full h-full z-[2] flex p-5 gap-3 flex-col justify-center items-center duration-300 group-hover:hidden'>
+              <h2 className='font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center'>Flutter UI - Lucely</h2>
+              <h2 className='font-medium text-center text-neutral-600 leading-[20px] text-base'>A Minimalist Counselling Mobile App.</h2>
+              <div className='flex gap-2'>
+                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>Flutter</div>
+                <div className='bg-neutral-900 text-xs text-white px-2 py-1 '>Dart#</div>
+              </div>
+            </div>
+          </div>
+        </Link>
         <Link href="/project/peanut">
           <div className='h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer'>
             <div className='absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300'>
