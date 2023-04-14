@@ -3,7 +3,7 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Lucely = () => {
+const Trivia = () => {
   React.useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -20,7 +20,7 @@ const Lucely = () => {
           <div className="flex flex-col gap-5 lg:gap-10">
             <div className="w-full lg:w-[70%]">
               <h2 className="font-black text-neutral-900 text-3xl md:text-5xl">
-                Flutter UI - Lucely Counselling App
+                Flutter UI - Real Estate Apartment Renting App
               </h2>
             </div>
             <div className="w-full lg:w-[70%] flex flex-col gap-1">
@@ -52,7 +52,7 @@ const Lucely = () => {
               </h2>
               <div>
                 <a
-                  href="https://youtu.be/STo25yzteO0"
+                  href="https://youtu.be/1zTvOrPcpqk"
                   className="hover:underline underline lg:no-underline font-normal text-lg text-neutral-900"
                 >
                   View showcase
@@ -65,7 +65,7 @@ const Lucely = () => {
               </h2>
               <div>
                 <a
-                  href="https://github.com/fransachmadhw/flutter-ui-lucely"
+                  href="https://github.com/fransachmadhw/flutter-ui-realestate"
                   className="hover:underline underline lg:no-underline font-normal text-lg text-neutral-900"
                 >
                   Available on GitHub
@@ -80,17 +80,12 @@ const Lucely = () => {
           >
             <div>
               <p className="text-neutral-400 text-xl lg:text-2xl mb-8">
-                My first mobile app I have ever made built with
-                Flutter. Lucely is an ultimate counselling app which
-                lets the user choose their desired psychologists or
-                even mentors. Lucely is made for someone who has
-                something like a psychological problem in their life.
-                The users can book online their psychologists, mentors
-                as well as experts online so they can easily contact
-                them by voice call or video call. Apart from that,
-                Lucely will provide its user by inviting them to join
-                a social event and also a super guide from Lucely
-                called LuceGuide.
+                Showing my second exploration with Flutter Framework,
+                I built a modern UI mobile app powered with GetX state
+                management. There are lots of things which are new to
+                me such as a custom navigation bar, carousel slider,
+                ability to zoom in and zoom out an image, tab bar, and
+                so forth.
               </p>
             </div>
           </div>
@@ -102,8 +97,8 @@ const Lucely = () => {
             className="w-full h-[200px] lg:h-[90vh] relative"
           >
             <Image
-              src="https://raw.githubusercontent.com/fransachmadhw/flutter-ui-lucely/main/Lucely-HD-Cover.jpg"
-              alt="lucely"
+              src="https://user-images.githubusercontent.com/74099030/231788448-1ff3b1c0-0f2c-42a1-90d4-2f5eed0171b0.jpg"
+              alt="realestate"
               layout="fill"
               objectFit="cover"
             />
@@ -114,4 +109,4 @@ const Lucely = () => {
   );
 };
 
-export default Lucely;
+export default Trivia;
