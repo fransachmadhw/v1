@@ -36,7 +36,47 @@ const Projects = () => {
         data-aos-anchor-placement="center-bottom"
         className="my-10 grid md:grid-cols-2 grid-cols-1 gap-4"
       >
-        <Link href="/project/realestate">
+        <Link href="/projects/reactdashboard">
+          <div className="h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer">
+            <div className="absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300">
+              2024
+            </div>
+            <div className="absolute w-full h-full bg-neutral-300 opacity-80 z-[1] duration-300 group-hover:opacity-0"></div>
+            <Image
+              src="https://repository-images.githubusercontent.com/751172828/aaf02717-3dff-46ff-85b4-ee1859192e04"
+              alt="nft"
+              layout="fill"
+              className="group-hover:grayscale-0 grayscale duration-300"
+              objectFit="cover"
+            />
+            <div className="absolute w-full h-full z-[2] flex p-5 gap-3 flex-col justify-center items-center duration-300 group-hover:hidden">
+              <h2 className="font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center">
+                React Admin UI
+              </h2>
+              <h2 className="font-medium text-center text-neutral-600 leading-[20px] text-base">
+                A Beautiful Dashboard User Interface Prototype.
+              </h2>
+              <div className="flex gap-2">
+                <div className="bg-neutral-900 text-xs text-white px-2 py-1 ">
+                  React 18
+                </div>
+                <div className="bg-neutral-900 text-xs text-white px-2 py-1 ">
+                  TypeScript
+                </div>
+                <div className="bg-neutral-900 text-xs text-white px-2 py-1 ">
+                  Daisy UI
+                </div>
+                <div className="bg-neutral-900 text-xs text-white px-2 py-1 ">
+                  Material UI
+                </div>
+                <div className="bg-neutral-900 text-xs text-white px-2 py-1 ">
+                  React Query
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link href="/projects/realestate">
           <div className="h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer">
             <div className="absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300">
               2023
@@ -67,7 +107,7 @@ const Projects = () => {
             </div>
           </div>
         </Link>
-        <Link href="/project/lucely">
+        <Link href="/projects/lucely">
           <div className="h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer">
             <div className="absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300">
               2023
@@ -98,7 +138,7 @@ const Projects = () => {
             </div>
           </div>
         </Link>
-        <Link href="/project/peanut">
+        <Link href="/projects/peanut">
           <div className="h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer">
             <div className="absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300">
               2022
@@ -130,42 +170,7 @@ const Projects = () => {
             </div>
           </div>
         </Link>
-        <Link href="/project/nft">
-          <div className="h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer">
-            <div className="absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300">
-              2022
-            </div>
-            <div className="absolute w-full h-full bg-neutral-300 opacity-80 z-[1] duration-300 group-hover:opacity-0"></div>
-            <Image
-              src="https://repository-images.githubusercontent.com/522400800/00e2b640-6114-4c14-a1c7-519682f87a85"
-              alt="nft"
-              layout="fill"
-              className="group-hover:grayscale-0 grayscale duration-300"
-              objectFit="cover"
-            />
-            <div className="absolute w-full h-full z-[2] flex p-5 gap-3 flex-col justify-center items-center duration-300 group-hover:hidden">
-              <h2 className="font-bold text-neutral-900 text-xl md:text-3xl uppercase text-center">
-                Mobile NFT Marketplace
-              </h2>
-              <h2 className="font-medium text-center text-neutral-600 leading-[20px] text-base">
-                A modern UI/UX NFT Mobile Marketplace built with React
-                Native.
-              </h2>
-              <div className="flex gap-2">
-                <div className="bg-neutral-900 text-xs text-white px-2 py-1 ">
-                  React Native
-                </div>
-                <div className="bg-neutral-900 text-xs text-white px-2 py-1 ">
-                  Expo
-                </div>
-                <div className="bg-neutral-900 text-xs text-white px-2 py-1 ">
-                  JavaScript
-                </div>
-              </div>
-            </div>
-          </div>
-        </Link>
-        <Link href="/project/blogshot">
+        <Link href="/projects/blogshot">
           <div className="h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer">
             <div className="absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300">
               2022
@@ -200,7 +205,7 @@ const Projects = () => {
             </div>
           </div>
         </Link>
-        <Link href="/project/dreadout2">
+        <Link href="/projects/dreadout2">
           <div className="h-[220px] md:h-[22vw] relative duration-500 ease-in-out group hover:cursor-pointer">
             <div className="absolute text-sm md:text-lg top-[3%] left-[3%] z-[3] bg-neutral-100 px-2 py-1 group-hover:bg-neutral-900 text-neutral-900 group-hover:text-white duration-300">
               2021

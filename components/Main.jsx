@@ -31,9 +31,9 @@ const Main = () => {
           </div>
           <div className="lg:w-[60%] w-[100%]">
             <h2 className="text-lg font-normal leading-[1.5rem] lg:leading-[2vw] text-neutral-400 lg:text-[1.5vw] text-center lg:text-left">
-              A junior front end developer who loves Web Development,
-              Mobile App Development and Artificial Intelligence.
-              Currently, on his 4th year of study at university.
+              A junior front end developer who loves Web Development
+              (JS Ecosystem), Mobile App Development and Artificial
+              Intelligence.
             </h2>
           </div>
           <div className="flex gap-3 z-[100]">

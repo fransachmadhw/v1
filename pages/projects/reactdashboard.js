@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import Nft from '../../components/Nft';
+import ReactDashboard from '../../components/ReactDashboard';
 import PreFooter from '../../components/PreFooter';
 
-const nft = () => {
+const reactdashboard = () => {
   return (
     <>
       <Head>
@@ -13,10 +13,10 @@ const nft = () => {
         />
         <link rel="icon" type="image/svg+xml" href="/face.svg" />
       </Head>
-      <Nft />
+      <ReactDashboard />
       <PreFooter />
     </>
   );
 };
 
-export default nft;
+export default reactdashboard;
